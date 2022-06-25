@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: cursive;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.container {
+    background-color: #fd5656;
+    height: 500px;
+    overflow-y: scroll;
+    box-shadow: 0 0 25px 0 #424242;
+}
+
+.container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #fdfdfd;
+}
+
+.container .header .input-text {
+    margin: 2rem;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.container .header .button {
+    padding: 0.5rem 0.9rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: 2px solid #fdfdfd;
+    background: none;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    transition: 0.2s ease;
+}
+
+.container .header .button:hover {
+    background: #fdfdfd;
+    color: #fd5656;
+}
+
+.container .body {
+    margin: 1rem;
+}
+
+.container .body .section .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdfdfd;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.container .body .section .item .item-information {
+    display: flex;
+    align-items: center;
+}
+
+.container .body .section .item .item-information .item-text {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.container .body .section .item .item-information input {
+    cursor: pointer;
+}
+
+.container .body .section .item .item-icons {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.uncompleted {
+    text-decoration: line-through;
+    color: #fd5656;
+}
